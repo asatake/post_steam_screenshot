@@ -1,0 +1,26 @@
+{
+  "name": "tweet_steam_screenshot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asatake/tweet_steam_screenshot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asatake/tweet_steam_screenshot/issues"
+  },
+  "homepage": "https://github.com/asatake/tweet_steam_screenshot#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.54",
+    "@babel/preset-env": "^7.0.0-beta.54",
+    "babel-loader": "^8.0.0-beta.4",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0"
+  }
+}
