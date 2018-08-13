@@ -1,4 +1,6 @@
-# [WIP] Tweet Steam Screenshot
+# Tweet Steam Screenshot
+
+![](https://github.com/asatake/tweet_steam_screenshot.git)
 
 ## What's this?
 
