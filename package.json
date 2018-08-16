@@ -1,26 +1,32 @@
 {
   "name": "tweet_steam_screenshot",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Nuxt + Electron",
+  "author": "asatake",
+  "private": true,
+  "main": "main.js",
+  "build": {
+    "appId": "",
+    "directories": {
+      "buildResources": "static"
+    }
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=DEV node_modules/electron/dist/electron .",
+    "build": "nuxt build && electron-builder"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/asatake/tweet_steam_screenshot.git"
+  "dependencies": {
+    "nuxt": "^1.4.0"
   },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/asatake/tweet_steam_screenshot/issues"
-  },
-  "homepage": "https://github.com/asatake/tweet_steam_screenshot#readme",
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.54",
-    "@babel/preset-env": "^7.0.0-beta.54",
-    "babel-loader": "^8.0.0-beta.4",
-    "webpack": "^4.16.2",
-    "webpack-cli": "^3.1.0"
+    "babel-eslint": "^8.2.1",
+    "cross-env": "^5.1.4",
+    "electron": "2.0.0-beta.7",
+    "electron-builder": "^20.8.1",
+    "electron-devtools-installer": "^2.2.3",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0"
   }
 }
