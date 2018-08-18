@@ -1,0 +1,24 @@
+{
+  "name": "tweet_steam_screenshot",
+  "version": "1.0.0",
+  "description": "tweet steam screenshot",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asatake/tweet_steam_screenshot.git"
+  },
+  "author": "asatake",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asatake/tweet_steam_screenshot/issues"
+  },
+  "homepage": "https://github.com/asatake/tweet_steam_screenshot#readme",
+  "dependencies": {
+    "electron-prebuilt": "^1.4.13",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}

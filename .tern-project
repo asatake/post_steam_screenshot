@@ -1,0 +1,13 @@
+{
+    "libs": [
+        "browser"
+    ],
+    "loadEagery": [
+        "node_modules/**/*.js"
+    ],
+    "plugins": {
+        "node": {},
+        "modules": {},
+        "es_modules": {}
+    }
+}
