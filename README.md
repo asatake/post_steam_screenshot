@@ -1,4 +1,4 @@
-# Tweet Steam Screenshot
+# Post Steam Screenshot
 
 ![status](https://img.shields.io/badge/WIP-dev-blue.svg?style=for-the-badge)
 
