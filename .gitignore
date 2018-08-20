@@ -1,5 +1,7 @@
 node_modules/
 package-lock.json
 .venv/
+__pycache__/
 .tern-port
 config/
+image_test

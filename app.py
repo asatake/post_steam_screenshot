@@ -2,47 +2,16 @@
 # coding: utf-8
 
 from flask import Flask, render_template
-import configparser
-import os
-import sys
-
-
-def read_config(config_path):
-    confp = configparser.ConfigParser()
-    if os.path.exists(config_path):
-        confp.read(config_path)
-    else:
-        confp["PATH"] = {"path": image_path}
-        confp["Twitter"] = {
-            "key": "",
-            "key_secret": "",
-            "token": "",
-            "token_secret": ""
-        }
-        confp["Mastodon"] = {
-            "client": "",
-            "client_secret": "",
-            "token": ""
-        }
-        with open(config_path, "w") as cf:
-            confp.write(cf)
-
-    return confp
-
-
-def parse_config():
-    return
-
-
-def write_config(path):
-    return
+from watchdog.observers import Observer
+from modules.watch import ChangeHandler
+from modules.config import Config
 
 
 app = Flask(__name__)
 
-image_path = ""
+image_path = "./image_test"
 config_path = "./config/config.ini"
-config = read_config(config_path)
+config = Config.read_config(config_path)
 
 @app.route("/")
 def top():
@@ -59,4 +28,8 @@ def save_config():
 
 if __name__ == "__main__":
     print("on app")
+    change_handler = ChangeHandler()
+    observer = Observer()
+    observer.schedule(change_handler, image_path, recursive=True)
+    observer.start()
     app.run(host="127.0.0.1", port=5000)
